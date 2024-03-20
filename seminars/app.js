@@ -92,21 +92,23 @@
 
 // Создаем сервер
 
-const http = require("http");
-const server = http.createServer((req, res) => {
-  if (req.url === "/") {
-    res.writeHead(200, {
-      "Content-type": "text/html; charset=UTF-8",
-    });
-    res.end("<h1>Главная страница</h1>");
-  } else if (req.url === "/about") {
-    res.writeHead(200, {
-      "Content-type": "text/html; charset=UTF-8",
-    });
-    res.end("<h1>About</h1>");
-  }
-});
-const port = 3000;
-server.listen(port, () => {
-  console.log(`Сервер запущен на порту ${port}`);
-});
+// const http = require("http");
+// const server = http.createServer((req, res) => {
+//   if (req.url === "/") {
+//     res.writeHead(200, {
+//       "Content-type": "text/html; charset=UTF-8",
+//     });
+//     res.end("<h1>Главная страница</h1>");
+//   } else if (req.url === "/about") {
+//     res.writeHead(200, {
+//       "Content-type": "text/html; charset=UTF-8",
+//     });
+//     res.end("<h1>About</h1>");
+//   }
+// });
+// const port = 3000;
+// server.listen(port, () => {
+//   console.log(`Сервер запущен на порту ${port}`);
+// });
+
+// Семинар 2 Работа с NPM
