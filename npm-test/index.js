@@ -1,4 +1,12 @@
-const npmTest = require("ruble-kopec-conjugates");
-let number = -1;
-const result = npmTest.rubleKopeika(number);
-console.log(result);
+const npmTest = require("currency-conjugates");
+let number = 12.22;
+const rubleKopeika = npmTest.rubleKopeika(number);
+console.log(rubleKopeika);
+const dollarCent = npmTest.dollarCent(number);
+console.log(dollarCent);
+const euroEuroCent = npmTest.euroEuroCent(number);
+console.log(euroEuroCent);
+const yenJapan = npmTest.yenJapan(number);
+console.log(yenJapan);
+const yuanChina = npmTest.yuanChina(number);
+console.log(yuanChina);
