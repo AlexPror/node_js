@@ -112,3 +112,27 @@
 // });
 
 // Семинар 2 Работа с NPM
+
+// Семинар 3 Работа с Express
+
+// Создайте файл writePerson.js
+// 2. Напишите код, который создаст файл person.json в директории
+// запускаемого скрипта и запишет в файл следующий объект:
+
+// const user = {
+//   name: "Ivan",
+//   surname: "Ivanov",
+//   age: 30,
+//   city: "Moskow",
+// };
+
+const fs = require("fs");
+const path = require("path");
+
+const jsonPath = path.join(__dirname, "user.json");
+console.log(jsonPath);
+
+const user = JSON.parse(fs.readFileSync(jsonPath, "utf8")); // получаем объект
+user.age = user.age - 10;
+user.city = "Kaluga";
+fs.writeFileSync(jsonPath, JSON.stringify(user, null, 2));

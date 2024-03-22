@@ -1,6 +1,6 @@
 {
   "name": "currency-conjugates",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "This library conjugates the words 'ruble', 'kopeck', 'dollar', 'cent' 'euro', 'eurocent', 'yen', 'sen', 'yuan', 'jiao', 'fen'",
   "main": "index.js",
   "scripts": {
